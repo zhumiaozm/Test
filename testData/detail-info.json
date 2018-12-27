@@ -1,0 +1,19 @@
+{
+	"testdata":[
+	{
+	"part-number":287323712893,
+	"part-name":"备件一",
+  "part-type":"油类",
+	"norm-number":20180001,
+	"produce-firm":"西安人度数据有限公司",
+	"supply-firm":"西安人度数据有限公司",
+	"replace-cycle":4,
+	"refer-price":290,
+	"measure-unit":"台",
+	"conversion-unit":"台",
+	"conversion-scale":2,
+	"stock-up":1000,
+	"stock-down":200
+	}
+	]
+}

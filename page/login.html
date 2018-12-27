@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<title>login</title>
+  	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-ie6.css">
+    <![endif] -->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/ie.css">
+    <![endif] -->
+  	<link rel="stylesheet" href="../css/login.css">
+    <style type="text/css">
+      .span1,
+      .span2,
+      .span3,
+      .span4,
+      .span5,
+      .span6,
+      .span7,
+      .span8,
+      .span9,
+      .span10,
+      .span11,
+      .span12 {
+        line-height: 40px;
+        text-align: center;
+      }
+
+      .show-grid {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body style="width:100%;height:100%; background: url(../img/bgimg.jpg) no-repeat 0 0;background-size: cover;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bgimg.jpg',sizingMethod='scale');">
+  <div id='lginfor' class="row-fluid show-grid">
+    <div class="span12" data-original-title="" title="">  
+      <form class='lgbody'>
+        <div class='title'>
+          <img src="../img/logo.png" alt="">
+          <span>装备维修管理系统</span>
+        </div>
+        <div class='textinput'>
+          <img src="../img/user.png" >
+          <input type="text" id="userName">
+        </div>
+        <div class='textinput'>
+          <img src="../img/password.png">
+          <input type="password" id="userPsw">
+        </div>
+
+        <div class='textinput'>
+          <!-- <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn-login" onclick="CheckLogin()">登录 </button> -->
+          <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn-login">登录 </button>
+        </div>
+        <div class='pswgroup'>
+          <!-- <input type="checkbox" id='remPsw'>
+          <span>记住密码</span>
+          <span>&nbsp;/&nbsp;</span> -->
+          <a href="findpsw.html">忘记密码?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/bootstrap-ie.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/DD_belatedPNG_0.0.8a-min.js"></script>
+  <script type="text/javascript">
+      //png图片透明兼容
+      DD_belatedPNG.fix('img');
+  </script>
+</body>
+</html>

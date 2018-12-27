@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>找回密码</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-ie6.css">
+	<![endif] -->
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/ie.css">
+	<![endif] -->
+	<link href="../css/findpsw.css" rel="stylesheet"></link>
+	<style type="text/css">
+		.span1,
+		.span2,
+		.span3,
+		.span4,
+		.span5,
+		.span6,
+		.span7,
+		.span8,
+		.span9,
+		.span10,
+		.span11,
+		.span12 {
+			line-height: 40px;
+			text-align: center;
+		}
+		/*.show-grid {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}*/
+	</style>
+</head>
+<body style="width: 100%;height: 100%;"style="width:100%;height:100%; background: url(../img/bgimg.jpg) no-repeat 0 0;background-size: cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bgimg.jpg',sizingMethod='scale');"">
+	<div id='repswinfor' class="row-fluid show-grid">
+      <div class="span12" data-original-title="" title="">	
+      	<form class='repswbody'>
+      		<div class='title'>
+      			<h4>密码重置</h4>
+      		</div>
+			<div class='textinput phone'>
+				<span>输入手机号</span>
+				<input type="text" id='userName'>
+			</div>
+			<div class='textinput code'>
+				<span>输入验证码</span>
+				<input type="text" class='getcode' id='identifyCode'>
+				<button id='getCodeBtn;' class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="width:96px;font-size:12px;line-height:22px;margin-bottom:10px;">获取验证码</button>
+			</div>
+			<div class='textinput'>
+				<span>输入新密码</span>
+				<input type="password" id='newPsw'>
+			</div>
+			<div class='textinput'>
+				<span>确认新密码</span>
+				<input type="password" id='confirmPsw'>
+			</div>
+			<div class='textinput'>
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id='submit'>提交修改 </button>
+			</div>
+			<div class='returnlg'>
+				<a href="login.html"><<返回登录</a>
+			</div>
+		</form>
+   	  </div>
+	</div>
+		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-ie.js"></script>
+		<script type="text/javascript" src="../js/findpsw.js"></script>
+
+</body>
+
+</html>

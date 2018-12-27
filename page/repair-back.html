@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/demo.css">
+    <link rel="stylesheet" type="text/css" href="../css/table.css">
+    <link rel="stylesheet" type="text/css" href="../css/home-page.css">
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-ie6.css">
+    <![endif] -->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/ie.css">
+    <![endif] -->
+    <title>repair-task</title>
+</head>
+<style type="text/css">
+.span1,
+.span2,
+.span3,
+.span4,
+.span5,
+.span6,
+.span7,
+.span8,
+.span9,
+.span10,
+.span11,
+.span12 {
+    line-height: 20px;
+    text-align: left;
+}
+</style>
+
+<body>
+    <!-- 导航开始 -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner" id="navigation">
+            <div class="container top-left">
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <img src="../img/logo.png" alt="">
+                        <span>装备维修管理系统</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class=""><a href="home-page.html">首页</a></li>
+                        <li class=""><a href="repair-task.html">维修任务</a></li>
+                        <li class="active"><a href="repair-back.html">维修回馈</a></li>
+                        <li class=""><a href="fault-count.html">故障统计</a></li>
+                        <li class=""><a href="repair-part.html">维修备件</a></li>
+                        <li class=""><a href="count-book.html">统计台账</a></li>
+                        <li class=""><a href="user-manage.html">用户管理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-right">
+                <span id='person'>张三</span>
+                <a href="login.html"><img src="../img/exit.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- 导航结束 -->
+    <!-- 主体内容 开始  -->
+    <div id="mainContent" class="main-content">
+        <div class="row-fluid show-grid">
+            <!-- 正文开始 -->
+            <div class='span12'>
+                <div class='selectItems'>
+                    <span>设备状态：</span>
+                    <select name="" id=""></select>
+                    <span>责任部门：</span>
+                    <select name="" id=""></select>
+                    <span>安装时间：</span>
+                    <input type="text" id="datepick">
+                    <button class="btn btn-primary"><img src="../img/search.png" alt="">&nbsp;查询</button>
+                        <button class="btn btn-primary"><img src="../img/reset.png" alt="">&nbsp;重置</button>
+                </div>
+                <!-- 条件结束 -->
+                <!-- 操作开始 -->
+                <!-- <div class='actionItems span3'>
+            <button class="btn btn-primary"><img src="../img/add.png" alt="">&nbsp;添加</button>
+            <button class="btn btn-primary"><img src="../img/edit.png" alt="">&nbsp;修改</button>
+            <button class="btn btn-primary"><img src="../img/delete.png" alt="">&nbsp;删除</button>
+            <button class="btn btn-primary"><img src="../img/lead-in.png" alt="">&nbsp;导入</button>
+            <button class="btn btn-primary"><img src="../img/lead-out.png" alt="">&nbsp;导出</button>
+            <button class="btn btn-primary"><img src="../img/print.png" alt="">&nbsp;打印</button>
+          </div>
+          </div> -->
+                <!-- 操作结束 -->
+                <table id="dg" title=""  pageSize="10" pageNumber="1" toolbar="#toolbar" pagination="true" idField="id" rownumbers="true" fitColumns="true" singleSelect="true">
+                    <thead>
+                        <tr>
+                            <th field="firstname" width="50" editor="{type:'validatebox',options:{required:true}}">First Name</th>
+                            <th field="lastname" width="50" editor="{type:'validatebox',options:{required:true}}">Last Name</th>
+                            <th field="phone" width="50" editor="{type:'validatebox',options:{required:true}}">Phone</th>
+                            <th field="email" width="50" editor="{type:'validatebox',options:{required:true,validType:'email'}}">Email</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div id="toolbar">
+                    <a href="repair-back-details.html" class="easyui-linkbutton" iconCls="icon-add" plain="true" >添加</a>
+                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-delete" plain="true" onclick="javascript:$('#dg').edatagrid('destroyRow')">删除</a>
+                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="javascript:$('#dg').edatagrid('saveRow')">保存</a>
+                    <!-- <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-undo" plain="true" onclick="javascript:$('#dg').edatagrid('cancelRow')">撤销</a> -->
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-lead-in" plain="true" )">导入</a>
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-lead-out" plain="true">导出</a>
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-printer" plain="true">打印</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容 结束  -->
+    <script type="text/javascript" src="../easyui/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-ie.js"></script>
+    <script type="text/javascript" src="../plugins/calendar/laydate.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.edatagrid.js"></script>
+    <script type="text/javascript" src="../plugins/savePNG/DD_belatedPNG_0.0.8a.js"></script>
+    <script type="text/javascript">
+    //日期选择器
+    laydate({
+        elem: '#datepick'
+    });
+    //easyui
+    $(function() {
+        $('#dg').edatagrid({
+            pageSize:10,
+            pageNumber:1,
+            method: 'get',
+            url: '../testData/users.json?number=Math.random();',
+            saveUrl: null,
+            updateUrl: null,
+            destroyUrl: null,
+            onFinished: function() {
+                DD_belatedPNG.fix('img'); //png图片透明兼容
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>
